@@ -1,0 +1,6 @@
+{
+  "name": "Student Registration & Analytics Dashboard",
+  "description": "A registration form and analytics dashboard for the Mini App Development course with Khmer UI, Chart.js, and Supabase integration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
