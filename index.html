@@ -1,14 +1,41 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Google AI Studio App</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>​​ 
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ចុះឈ្មោះវគ្គសិក្សា Mini App</title>
+    <!-- ទាញយកបណ្ណាល័យសម្រាប់រចនា និងតភ្ជាប់ទិន្នន័យ -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@400;700&display=swap');
+        body { font-family: 'Kantumruy Pro', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-100 p-6">
 
+    <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-md mt-10">
+        <h2 class="text-2xl font-bold mb-6 text-center text-blue-600">ទម្រង់ចុះឈ្មោះរៀនវគ្គ Mini App</h2>
+        
+        <form id="registrationForm" class="space-y-6">
+            <!-- ផ្នែកព័ត៌មាន -->
+            <div>
+                <label class="block text-gray-700 font-bold mb-2">ឈ្មោះពេញ</label>
+                <input type="text" id="full_name" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500">
+            </div>
+            <div>
+                <label class="block text-gray-700 font-bold mb-2">លេខទូរស័ព្ទ ឬ Telegram</label>
+                <input type="text" id="contact_info" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500">
+            </div>
 
+            <!-- ប៊ូតុងបញ្ជូន -->
+            <button type="submit" class="w-full bg-blue-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-blue-700 transition">បញ្ជូនការចុះឈ្មោះ</button>
+        </form>
+    </div>
+
+    <script>
+        // កន្លែងសម្រាប់ភ្ជាប់ទៅកាន់ Supabase របស់អ្នកនាពេលក្រោយ
+        console.log("HTML Ready!");
+    </script>
+</body>
+</html>
